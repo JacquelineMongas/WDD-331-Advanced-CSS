@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+
+:root{
+    --main-blue:#6495ED;
+    --main-white: #FAEBD7;
+    --active-link:#DEB887;
+}
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: var(--main-white);
+    margin: 0;
+   
+}
+
+h1, h2{
+    font-family: "Lora";
+    margin-right: 15px;
+
+}
+
+ul{
+    list-style: none;
+    margin-right: 15px;
+}
+
+/*header*/
+header{
+    background-color: var(--main-blue);
+    text-align: right;
+}
+
+header h1 a{
+    color: var(--main-white);
+}
+header a:link{
+    text-decoration: none;
+}
+
+nav li{
+    padding: 0.5rem;
+}
+/* links*/
+a,
+a:visited{
+    color: var(--main-white);
+
+}
+
+a:active{
+    color: var(--active-link);
+}
+
+a:hover {
+    color: white;
+    
+}
+
+/*nav links*/
+
+nav a:hover{
+    color: white;
+    text-decoration: underline;
+
+}
+
+/*article title links*/
+article h2 a,
+article h2 a:visited{
+    color:black ;
+    text-decoration: none;
+}
+
+article h2 a:hover{
+    color: var(--main-blue);
+    text-decoration: underline;
+}
+
+/*main*/
+main{
+    width: 50%;
+    margin: 2rem auto;
+}
+
+/* article cards */
+article{
+    background-color: white;
+    box-shadow: 4px 4px 2px #ccc;
+    margin: 0 auto 2rem;
+    text-align: left;
+}
+
+.post-date{
+    color: gray;
+    margin: 1rem auto -1rem;
+    padding: 20px;
+}
+
+.post-content{
+    margin: 0 auto;
+    padding: 20px;
+}
+
+article figure{
+    margin: 0 auto;
+    text-align: center;
+}
+
+article img{
+    width: 50%;
+    margin: 0 auto;
+}
+
+/* small screens */
+@media screen and (min-width:700px) {
+    body div{ 
+        display: block;
+    }
+
+    header{
+        display: block;
+        margin: 0;
+        padding: 1rem 2rem;
+    }
+    
+    article{
+        padding: 2rem;
+    }
+}
+
+/*large screens*/
+@media screen and (min-width:700px){
+    body div{
+        display:flex;
+        
+    }
+}
