@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>selector: default</title>
+	<link href="styles.css" rel="stylesheet">
+<style>
+	/*The :default pseudo-class selector targets 
+	any form element falling onto one of the folowing cartegories;*/
+
+	/* example 1; Button elements that are their form's 
+	"default" button (the first button in tree order, within a form)*/
+	
+	.example1 button:default {border: 5px solid green;}	
+
+
+	/* example 2; Input elements who' type attribute is either 
+	"submit" or "image", and that are their form's default 
+	button(the first submit or img input element in tree order, within a form)*/
+
+	.example2 input:default {border: 5px solid green;}
+
+	/* example 3; Input elements such as radio or checkboxes that have a checked attribute */
+	
+	.example3 input:default {border: 5px solid green;}
+
+	/* example 4; Optional elements that have a selected attribute */
+	
+	.example4 input:default + label {border: 5px solid green;}
+
+	/* example 5; */
+	
+	.example5 input:default + label {border: 5px solid green;}
+
+</style>
+</head>
+<body>
+<div class="container">
+	<h1>
+		Selector: default
+	</h1>
+	<h2>Example 1 - button elements</h2>
+	<form class="example1" method="get">
+		<button type="submit">Submit</button>
+		<button type="button">Cancel</button>
+		<button type="reset">Reset</button>
+	</form>
+	<h2>Example 2 - input type="submit"</h2>
+	<form class="example2" method="get">
+		<input type="reset" value="Reset">
+		<input type="submit" value="Submit1">
+		<input type="submit" value="Submit2">
+	</form>
+	<h2>Example 3 - input type="image"</h2>
+	<form class="example3" method="get">
+		<input type="image" src="x-submit.png" alt="Submit1">
+		<input type="image" src="x-reset.png" alt="Reset">
+	</form>
+	<h2>Example 4 - radio - checked</h2>
+	<form class="example4" method="get">
+		<input id="r1" name="choice" type="radio" checked>
+		<label for="r1">checked</label><br>
+		<input id="r2" name="choice" type="radio">
+		<label for="r2">not checked</label>
+	</form>
+	<h2>Example 5 - checkbox - checked</h2>
+	<form class="example5" method="get">
+		<input id="c1" name="choice" type="checkbox" checked>
+		<label for="c1">checked</label><br>
+		<input id="c2" name="choice" type="checkbox">
+		<label for="c2">not checked</label>
+	</form>
+</div>
+</body>
+</html>
+

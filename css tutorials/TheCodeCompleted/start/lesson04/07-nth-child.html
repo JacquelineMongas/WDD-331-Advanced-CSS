@@ -2,22 +2,31 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>selector: nth-child</title>
 	<link href="styles.css" rel="stylesheet">
 <style>
 	ul { margin: 0; }
-	
-	/* example 1 */
-	
-	/* example 2 */
+	/*The :nth-child() pseudo-class selector targets specific child elements within the parent.
+	The six different types of values used inside the brackets dictate which child  elements will be targeted*/
 
-	/* example 3 */
-	
-	/* example 4 */
-	
-	/* example 5 */
-	
-	/* example 6 */
+	/* example 1: The brackets can contain an integer value*/
+	.example1 li:nth-child(3) {color: red;}
+
+	/* example 2; The backets can contain an integer value and letter "n" */
+	.example2 li:nth-child(3n) {color: red;}
+
+	/* example 3; The backets can contain an integer value,the letter "n, a plus (+) symbol and another integer value" */
+	.example3 li:nth-child(3n+1) {color: red;}
+
+	/* example 4; The backets can contain an integer value,the letter "n, a minus (-) symbol and another integer value.*/
+	.example4 li:nth-child(3n-1) {color: red;}
+
+	/* example 5; The backets can contain the "even" key word*/
+	.example5 li:nth-child(even) {color: red;}
+
+	/* example 6; The backets can contain the "odd" key word,*/
+	.example6 li:nth-child(odd) {color: red;}
 </style>
 </head>
 <body>

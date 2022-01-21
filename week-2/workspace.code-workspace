@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "..\\css tutorials\\lesson1"
+		},
+		{
+			"path": "..\\css tutorials\\lesson2\\step2.1\\step2.1"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "step2.1"
+	}
+}

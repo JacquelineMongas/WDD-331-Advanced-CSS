@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>selector: invalid</title>
+	<link href="styles.css" rel="stylesheet">
+<style>
+	/*the :invalid pseudo class selector targets 
+	form elements the are either required but not 
+	filledin, or are determined to be invalid.*/
+
+	/* example 1 */
+	input:invalid {border: 5px red;}
+
+</style>
+</head>
+<body>
+<div class="container">
+	<h1>
+		Selector: invalid
+	</h1>
+	<h2>Example 1</h2>
+	<form class="example" action="#">
+		<div>
+			<label for="one">Enter two numbers only (for example "59")</label>
+			<input id="one" type="text" pattern="[0-9]{2}">
+		</div>
+	</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<title>selector: after</title>
+	<link href="styles.css" rel="stylesheet">
+<style>
+	/* The ::after pseudo-class selector is used to generate content.
+		Used in conjunction with the "content" proprty.
+		This generated content is rendered within the specified element - after the element's real content.*/
+
+	/* example 1; Can Include a text string. This will place the generated text string after the element's content. */
+	.one::after {
+		content: "Hello again";
+		color: green;
+	}
+
+	/* example 2; Img. This will place the generated image after the element's content.*/
+	.two::after {content: url(ximmage.png);}
+	
+	/* example 3; Attribute, This will place the value of the attribute as text after the element's content. */
+	.three::after {
+		content: attr(class);
+		color: red;
+	}
+
+	/* example 4; empty value. This will allow authors to position and style a new generated element */
+	.four::after {
+		content: "";
+		display: block;
+		width: 50px;
+		height: 50px;
+		background: palevioletred;
+
+	}
+</style>
+</head>
+<body>
+<div class="container">
+	<h1>
+		Selector: after
+	</h1>
+	<h2>
+		Option 1: Text generated content
+	</h2>
+	<p class="example one">
+		Lorem ipsum dolor sit amet consect etuer adipi scing elit sed diam nonummy nibh euismod tinunt ut laoreet dolore magna aliquam erat volut.
+	</p>
+	<h2>
+		Option 2: Image generated content
+	</h2>
+	<p class="example two">
+		Lorem ipsum dolor sit amet consect etuer adipi scing elit sed diam nonummy nibh euismod tinunt ut laoreet dolore magna aliquam erat volut.
+	</p>	
+	<h2>
+		Option 3: Attribute generated content
+	</h2>
+	<p class="example three">
+		This is a paragraph with a class attribute.
+	</p>
+	<h2>
+		Option 4: Empty generated content
+	</h2>
+	<p class="example four">
+		Lorem ipsum dolor sit amet consect etuer adipi scing elit sed diam nonummy nibh euismod tinunt ut laoreet dolore magna aliquam erat volut.
+	</p>
+</div>
+</body>
+</html>

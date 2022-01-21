@@ -2,22 +2,34 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>selector: nth-of-type</title>
 	<link href="styles.css" rel="stylesheet">
 <style>
 	.example p { margin: 0; }
+	/*The :nth-last-of-type() pseudo-class selector targets
+	 specific child elements within the parent.
+	the six different types of values used inside
+	 the brackets dictete which child element will be targeted.*/
+
+	/* example 1; The brackets can contain an integer value */
+	.example1 p:nth-of-type(3) {color: red;}
 	
-	/* example 1 */
-	
-	/* example 2 */
-	
-	/* example 3 */
-	
-	/* example 4 */
-	
-	/* example 5 */
-	
-	/* example 6 */
+	/* example 2; The brackets can contain an integer value and the letter "n"*/
+	.example2 p:nth-of-type(3n){color: red;}
+
+	/* example 3; The brackets can contain an integer value and the letter "n", a plus (+) symbol and another integer value*/
+	.example3 p:nth-of-type(3n+1) {color: red;}
+
+	/* example 4; The brackets can contain an integer value and the letter "n", a minus (-) symbol and another integer value*/
+	.example4 p:nth-of-type(3n-1) {color: red;}
+
+	/* example 5; The brackets can contain the "even" key word*/
+	.example5 p:nth-of-type(even) {color: red;}
+
+	/* example 6 The brackets can contain "odd" key word*/
+	.example6 p:nth-of-type(odd) {color: red;}
+
 </style>
 </head>
 <body>

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>selector: empty</title>
 	<link href="styles.css" rel="stylesheet">
 <style>
@@ -10,8 +11,14 @@
 		padding: 10px;
 		border: 1px solid green;
 	}
-	
-	/* example 1 */
+
+	/*The :empty pseudo-class selector 
+	targets elements that have no children
+	(no element, text or even character space).*/
+
+	/* example 1:*/
+	p:empty{border: 1px solid palevioletred;}
+
 </style>
 </head>
 <body>
